@@ -1,0 +1,17 @@
+{
+  "name": "MonthlyReflection",
+  "type": "object",
+  "properties": {
+    "month_key": {
+      "type": "string",
+      "description": "Month identifier in format YYYY-MM"
+    },
+    "reflection": {
+      "type": "string",
+      "description": "Monthly reflection text"
+    }
+  },
+  "required": [
+    "month_key"
+  ]
+}
