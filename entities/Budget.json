@@ -1,0 +1,25 @@
+{
+  "name": "Budget",
+  "type": "object",
+  "properties": {
+    "category": {
+      "type": "string",
+      "enum": [
+        "Food",
+        "Rent & Utility",
+        "Car & Transportation",
+        "Subscription & Bill",
+        "Others"
+      ],
+      "description": "Main category"
+    },
+    "monthly_limit": {
+      "type": "number",
+      "description": "Monthly budget limit for this category"
+    }
+  },
+  "required": [
+    "category",
+    "monthly_limit"
+  ]
+}
