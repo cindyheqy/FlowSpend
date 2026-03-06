@@ -1,0 +1,39 @@
+{
+  "name": "Expense",
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of the expense"
+    },
+    "amount": {
+      "type": "number",
+      "description": "Amount spent"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Detailed notes about the expense"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Food",
+        "Rent & Utility",
+        "Car & Transportation",
+        "Subscription & Bill",
+        "Others"
+      ],
+      "description": "Main category"
+    },
+    "subcategory": {
+      "type": "string",
+      "description": "Subcategory within the main category"
+    }
+  },
+  "required": [
+    "date",
+    "amount",
+    "category"
+  ]
+}
